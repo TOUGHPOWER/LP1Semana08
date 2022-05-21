@@ -7,9 +7,10 @@ namespace GameUnits
 {
     public class Settler
     {
-        public Settler(int health, int movement) : base(health,movement)
+        public Settler(int health, int movement, float value) 
+        : base(health,movement, value)
         {
-            
+            value = 5;
         }
 
         public void Move()
