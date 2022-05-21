@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 
 namespace GameUnits
 {
-    public class Settler
+    public class Settler:Unit
     {
-        public Settler(int health, int movement, float value) 
-        : base(health,movement, value)
+        
+        public override float Value {get;}
+        public Settler(int health, int movement) 
+        : base(health,movement)
         {
-            value = 5;
+            Value = 5;
         }
 
         public void Move()
